@@ -1,0 +1,287 @@
+<!-- https://frontendresource.com/css-animation-examples/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.2/gsap.min.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+* {
+            box-sizing: border-box;
+        }
+
+
+@font-face {
+    font-family: 'a1';
+    src: url("../devil_candle/DevilCandle_PERSONAL_USE_ONLY.otf") format('truetype');
+}
+@font-face {
+    font-family: 'a2';
+    src: url("../Urbanist/Urbanist-VariableFont_wght.ttf") format('truetype');
+}
+
+
+@font-face {
+    font-family: 'a6';
+    src: url("../dash/Dash-Horizon-Demo.otf") format('truetype');
+}
+@font-face {
+    font-family: 'a7';
+    src:url("../deadly_advance/Deadly\ Advance.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'a9';
+    src: url("../vampire_wars/Vampire\ Wars.ttf") format('truetype');
+}
+
+       
+</style>
+</head>
+<body>
+    
+<!-- header section navbar -->
+<div class="navbar" id="myNavbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#mainmain">Services</a>
+        <a href="#contactpage">Contact</a>
+        <a class="menu-icon" href="javascript:void(0);" onclick="footernavbar()">☰ Menu</a>
+</div>
+      
+
+
+
+
+
+<!-- hero section title section -->
+<svg viewbox="0 0 100 20" id="hero">
+    <defs>
+      <linearGradient id="gradient">
+        <stop color="#000"/>
+      </linearGradient>
+      <pattern id="wave" x="0" y="-0.5" width="100%" height="100%" patternUnits="userSpaceOnUse">
+        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+          <animateTransform
+              attributeName="transform"
+              begin="0s"
+              dur="1.5s"
+              type="translate"
+              from="0,0"
+              to="40,0"
+              repeatCount="indefinite" />
+        </path>
+      </pattern>
+    </defs>
+    <text text-anchor="middle" x="50" y="15" font-size="17" fill="white" fill-opacity="0.1">HR Dharam Kanta</text>
+    <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="1">HR Dharam Kanta</text>
+    <text text-anchor="middle" x="50" y="20" font-size="7" fill="#333" id="textspcial">Building Material Supplier</text>
+  
+</svg>
+
+
+
+
+
+
+
+<!-- slider just title ke niche main phtos slider   -->
+<div class="slider-container" id="sliderContainer">
+
+    <div class="items">
+  
+      <div class="item">
+        <div id="imgpersonaldiv"><img src="bricks.jpeg" alt="Item 1"></div>
+        <h3>Red Clay Bricks</h3>
+        <ion-icon name="cart" class="cartslide"></ion-icon>
+      </div>
+      <div class="item">
+        <div id="imgpersonaldiv"><img src="ventilator.jpg" alt="Item 1"></div>
+  
+        <h3>Ventilator(Roshandan)</h3>
+
+      <ion-icon name="cart" class="cartslide"></ion-icon>
+      </div>
+      <div class="item">
+        <div id="imgpersonaldiv"><img src="solil.jpg" alt="Item 1"></div>
+        <h3>Construction Soil</h3>
+
+      <ion-icon name="cart" class="cartslide"></ion-icon>
+      </div>
+    </div>
+  
+    <div class="dots" id="dotsContainer"></div>
+  </div>
+  
+
+
+
+<!-- about us page  -->
+  <div class="aboutuspage">
+    <img src="logo.png" alt="About Us Image">
+    <p id="aboutustitle">Dhram Kanta</p>
+    <div class="aboutuscontent">
+        <h3>Welcome to HR Dhram Kanta, your trusted destination for high-quality building materials.</h3>
+        <h2>Our Mission</h2>
+        <p>Our mission is rooted in delivering excellence to our valued customers. With a focus on 
+        quality and reliability, we ensure that our bricks are not just building blocks but a 
+        foundation for your dreams. The cement we offer is sourced from reputable suppliers, 
+        guaranteeing strength and longevity in every mix. Additionally, our premium 
+        construction soil selection caters to the diverse needs of your projects, promising 
+        optimal fertility and composition.
+        </p>
+        <p>Choose HR Dhram Kanta for your building material needs, where quality meets integrity, 
+        and your construction journey is our top priority. Build with confidence, build with 
+        HR Dhram Kanta.
+        </p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- prices items 4 items price  ................. -->
+<div id="mainmain">
+  <!-- First div -->
+<div class="sabsemain">
+      <div class="photo-container">
+          <div class="photo-main">
+              <img src="single.png" alt="green apple slice">
+          </div>
+          <div class="product__info">
+              <div class="title">
+                  <h1>Wonder Cement</h1>
+                  <span>PPC 50KG Bag</span>
+              </div>
+              <div class="price">
+                  R$ <span>390.00</span>
+              </div>
+              <button class="buy--btn">ADD TO CART</button>
+          </div>
+      </div>
+</div>
+
+  <!-- Second div -->
+<div class="sabsemain">
+      <div class="photo-container">
+          <div class="photo-main">
+              <img src="ultra.png" alt="green apple slice">
+          </div>
+          <div class="product__info">
+              <div class="title">
+                  <h1>Ultratech Cement</h1>
+                  <span>PPC 50KG Bag</span>
+              </div>
+              <div class="price">
+                  R$ <span>380.00</span>
+              </div>
+              <button class="buy--btn">ADD TO CART</button>
+          </div>
+      </div>
+</div>
+  
+  <!-- Third div -->
+<div class="sabsemain">
+      <div class="photo-container">
+          <div class="photo-main">
+              <img src="jksuper.jpg" alt="green apple slice">
+          </div>
+          <div class="product__info">
+              <div class="title">
+                  <h1>JKSuper Cement</h1>
+                  <span>PPC 50KG Bag</span>
+              </div>
+              <div class="price">
+                  R$ <span>345.00</span>
+              </div>
+              <button class="buy--btn">ADD TO CART</button>
+          </div>
+      </div>
+</div>
+  
+  <!-- Fourth div -->
+<div class="sabsemain">
+      <div class="photo-container">
+          <div class="photo-main">
+              <img src="shree1.jpg.webp" alt="green apple slice">
+          </div>
+          <div class="product__info">
+              <div class="title">
+                  <h1>Shree  Cements</h1>
+                  <span>PPC 50KG Bag</span>
+              </div>
+              <div class="price">
+                  R$ <span>350.00</span>
+              </div>
+              <button class="buy--btn">ADD TO CART</button>
+          </div>
+      </div>
+</div>
+</div>
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+<!-- contact us page -->
+<footer class="contact-footer" id="contactpage">
+  <div class="contact-container">
+    <div class="contact-info">
+      <h3>Contact Us</h3>
+      <p>If you have any questions, feel free to reach out to us.</p>
+      <ul>
+        <li>Email: <a href="mailto:info@example.com">pukhrajnemiwal9@gmail.com</a></li>
+        <li>Phone: +919784139574</li>
+        <li>Address: Busstand Raghunathgarh(Sikar)</li>
+      </ul>
+    </div>
+    <div class="contact-form">
+      <h3>Send Us a Message</h3>
+      <form action="submit_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="s">Send Message</button>
+      </form>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,357 @@
+/* items with their 6item prices value ....................
+ mobile navigation items  */
+/* @media (max-width:450px) {
+  html {
+    font-size: smaller;
+    height: auto;
+  }
+  
+  .shop-content {
+    border-bottom: 1px double rgb(227, 229, 240);
+    border-top: 1px double rgb(227, 229, 240);
+    border-width: 5px;
+    height: 260px;
+    overflow-x: scroll;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  .container {
+    max-width: 500px;
+    padding: 1px;
+    margin: auto;
+    width: 100%;
+  }
+}
+
+@media (min-width:450px) and (max-width:1300px) {
+  .shop-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 1.5rem;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .container {
+    max-width: 1200px;
+    padding: 4rem;
+    margin: auto;
+    width: 100%;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+h2.title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.food-box {
+  position: relative;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+  border-radius: 3px;
+}
+
+.pic {
+  width: 60%;
+  margin-left: 20%;
+  height: 170px;
+  overflow: hidden;
+}
+
+.food-img {
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.pic:hover img {
+  transform: scale(1.5);
+}
+
+.food-title {
+  padding-left: 0%;
+  padding-top: 3px;
+  padding-right: 3px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ff6348;
+}
+
+.food-price {
+  font-weight: 500;
+}
+
+.add-cart {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #2ed573;
+  border-radius: 3px;
+  color: white;
+  padding: 10px;
+  margin: 13px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.add-cart:hover {
+  background-color: rgba(255, 0, 0, 0.786);
+}
+
+.cart {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 400px;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+  z-index: 100;
+}
+
+.cart-active {
+  right: 0;
+  transition: 0.5s;
+}
+
+.cart-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.cart-box {
+  display: grid;
+  grid-template-columns: 32% 50% 18%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+}
+
+.cart-img {
+  width: 75px;
+  height: 75px;
+  background-size: cover;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 5px;
+}
+
+.detail-box {
+  display: grid;
+  row-gap: 0.5rem;
+}
+
+.price-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-food-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #ff6348;
+  font-weight: 500;
+}
+
+.cart-price {
+  font-weight: 500;
+}
+
+.cart-quantity {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  width: 2.4rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.cart-remove {
+  font-size: 24px;
+  color: red;
+  cursor: pointer;
+}
+
+.total {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+}
+
+.total-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.total-price {
+  margin-left: 0.5rem;
+}
+
+.btn-buy {
+  padding: 12px 20px;
+  background-color: #2f3542;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#cart-close {
+  position: absolute;
+  top: 1rem;
+  right: 0.8rem;
+  font-size: 2rem;
+  cursor: pointer;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Items with their prices and 6 items  add to cart button
+<div class="container">
+  <div class="shop-content">
+      <div class="food-box">
+          <div class="pic"><img src="1.png" class="food-img"></div>
+          <h2 class="food-title">Wonder Cement</h2>
+          <span class="food-price">Rs.400</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+          <div class="pic"><img src="2.png" class="food-img"></div>
+          <h2 class="food-title">JK Super Cement</h2>
+          <span class="food-price">Rs.370</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+          <div class="pic"><img src="3.png" class="food-img"></div>
+          <h2 class="food-title">Ultratech Cement</h2>
+          <span class="food-price">Rs.390</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+          <div class="pic"><img src="4.png" class="food-img"></div>
+          <h2 class="food-title">Ultratech Grade</h2>
+          <span class="food-price">Rs.425</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+          <div class="pic"><img src="5.png" class="food-img"></div>
+          <h2 class="food-title">Wonder Xtreme</h2>
+          <span class="food-price">Rs.475</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+          <div class="pic"><img src="6.png" class="food-img"></div>
+          <h2 class="food-title">Shree Cement</h2>
+          <span class="food-price">Rs.365</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  </div>
+</div> -->
+
+

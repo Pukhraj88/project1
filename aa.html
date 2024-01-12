@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.2/gsap.min.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+    </style>
+</head>
+<body>
+
+
+<!-- header section navbar -->
+<div class="navbar" id="myNavbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a class="menu-icon" href="javascript:void(0);" onclick="footernavbar()">☰ Menu</a>
+</div>
+
+
+
+
+<!-- hero section -->
+<svg viewBox="0 0 100 20" id="hero">
+        <defs>
+            <linearGradient id="gradient">
+                <stop color="#000" />
+            </linearGradient>
+            <pattern id="wave" x="0" y="-0.5" width="100%" height="100%" patternUnits="userSpaceOnUse">
+                <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z"
+                    mask="url(#mask)" fill="url(#gradient)">
+                    <animateTransform attributeName="transform" begin="0s" dur="1.5s" type="translate" from="0,0"
+                        to="40,0" repeatCount="indefinite" />
+                </path>
+            </pattern>
+        </defs>
+        <text text-anchor="middle" x="50" y="15" font-size="17" fill="white" fill-opacity="0.1">HR Dharam Kanta
+        </text>
+        <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)" fill-opacity="1">HR Dharam Kanta
+        </text>
+        <text text-anchor="middle" x="50" y="20" font-size="7" fill="#333" id="textspcial">Building Material
+            Supplier</text>
+</svg>
+
+
+
+
+<!-- items slides slider items   -->
+<div class="slider-container" id="sliderContainer">
+        <div class="items">
+            <div class="item">
+                <div id="imgpersonaldiv"><img src="1.png" alt="Item 1"></div>
+                <h3>Wonder Cement</h3>
+                <p>Rs.400</p>
+                <ion-icon name="cart" class="cartslide"></ion-icon>
+            </div>
+            <div class="item">
+                <div id="imgpersonaldiv"><img src="2.png" alt="Item 1"></div>
+
+                <h3>Ultratech Cement</h3>
+                <p>Rs.390</p>
+                <ion-icon name="cart" class="cartslide"></ion-icon>
+            </div>
+            <div class="item">
+                <div id="imgpersonaldiv"><img src="6.png" alt="Item 1"></div>
+                <h3>Shree Cement</h3>
+                <p>Rs.365</p>
+                <ion-icon name="cart" class="cartslide"></ion-icon>
+            </div>
+        </div>
+        <div class="dots" id="dotsContainer"></div>
+</div>
+
+
+
+
+
+
+<script src="index.js"></script>
+</body>
+</html>
