@@ -235,78 +235,98 @@ font-variant: small-caps;
 
 
 /* ******** about us page ******** */
-@media (min-width:451px){
-  .aboutuspage img {
-      width: 40%;
-      height: 48%;
-      display: block;
-      margin: 0 auto;
-      position: relative;
-  }
-  #aboutustitle{
-display: none;
-  }
+@media (min-width: 451px) {
+    .aboutuspage img {
+        width: 40%;
+        height: 48%;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    #aboutustitle {
+        display: none;
+    }
 }
 
 @media (max-width: 450px) {
-  .aboutuspage img {
-      width: 30%;
-  }
+    .aboutuspage img {
+        width: 30%;
+    }
 
-  #aboutustitle {
-      position: absolute;
-      font-family: 'a9';
-      top: 8%;
-      left: 38%;
-      font-size: 28px;
-  }
+    /* dhram kanta */
+    #aboutustitle {
+        position: absolute;
+        font-family: 'Aclonica', sans-serif;
+        top: 8%;
+        left: 38%;
+        font-size: 28px;
+    }
 
-  #aboutustitle::before {
-      content: 'HR';
-      font-family: 'a7';
-      position: absolute;
-      top: -70%;
-      left: 0%;
-  }
+    #aboutustitle::before {
+        content: 'HR';
+        font-family: 'Aclonica', sans-serif;
+        position: absolute;
+        top: -70%;
+        left: 0%;
+    }
 
-  #aboutustitle::after {
-      content: 'Building Material Supplier';
-      font-family: 'a6';
-      font-size: 16px;
-      position: absolute;
-      top: 85%;
-      letter-spacing: 1.7px;
-      left: 0%;
-  }
+    #aboutustitle::after {
+        content: 'Building Material Supplier';
+        font-family: 'Fugaz One', sans-serif;
+        font-size: 13px;
+        position: absolute;
+        top: 85%;
+        letter-spacing: 1px;
+        left: 0%;
+    }
 
+    .aboutuscontent h2::after {
+        content: '';
+        position: absolute;
+        width: 82%;
+        background-color: black;
+        height: 2px;
+        top: 34%;
+        left: 12%;
+    }
 }
 
 .aboutuspage {
-  background-color:hsl(0,0%,94%);
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+    background-color: hsl(0, 0%, 94%);
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.aboutuscontent p{
-  font-family:'jost';
-  text-align: justify;
+.aboutuscontent p {
+    font-family: 'jost';
+    text-align: justify;
 }
-.aboutuscontent h2{
-  font-family:'a1';
- font-size: 20px;
-  text-align: justify;
-  line-height: 1.6;
+
+.aboutuscontent h2 {
+    font-family: 'jost';
+    font-weight: 900;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.6;
 }
-.aboutuscontent h3{
-  font-family:'a2';
-  word-spacing: 1px;
-  letter-spacing: 1px;
-  text-align: justify;
-  font-weight: 800;
-  line-height: 1.3;
+
+.aboutuscontent h2::first-letter {
+    font-size: 30px;
+    color: red;
 }
+
+.aboutuscontent h3 {
+    font-family: 'Urbanist', sans-serif;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    text-align: justify;
+    font-weight: 900;
+    line-height: 1.3;
+}
+
 /* ******** end about us page ******** */
 
 
